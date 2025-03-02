@@ -259,7 +259,7 @@ INSERT INTO reservations (id, guest_id, property_id, reservation_status, from_da
 INSERT INTO payment_methods (id, method_name) VALUES
 (1, 'Credit card'),
 (2, 'Debit card'),
-(3, 3),
+(3, 'Google Pay'),
 (4, 'Cash'),
 (5, 'Bank transfer'),
 (6, 'Prepaid card'),

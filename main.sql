@@ -23,7 +23,7 @@ CREATE TABLE languages(
     language_name VARCHAR(255) NOT NULL UNIQUE
 );
 
-CREATE TABLE ladmark_categories(
+CREATE TABLE landmark_categories(
     id BIGSERIAL PRIMARY KEY,
     category_name VARCHAR(255) NOT NULL
 );
@@ -41,7 +41,7 @@ CREATE TABLE landmarkcategories_landmarks(
     category_id BIGINT NOT NULL,
     UNIQUE(landmark_id, category_id),
     CONSTRAINT fk_landmarkcategories_landmarks_landmark FOREIGN KEY (landmark_id) REFERENCES landmarks(id) ON DELETE CASCADE,
-    CONSTRAINT fk_landmarkcategories_landmarks_category FOREIGN KEY (category_id) REFERENCES ladmark_categories(id) ON DELETE CASCADE
+    CONSTRAINT fk_landmarkcategories_landmarks_category FOREIGN KEY (category_id) REFERENCES landmark_categories(id) ON DELETE CASCADE
 );
 
 CREATE TABLE useraccounts(
