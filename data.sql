@@ -52,7 +52,7 @@ INSERT INTO cities (id, country_id, city_name) VALUES
 (17, 4, 'Cali'),
 (18, 4, 'Valledupar'),
 (19, 4, 'Barranquilla'),
-(29, 4, 'Cartagena');
+(20, 4, 'Cartagena');
 
 -- Add 20 languages
 INSERT INTO languages (id, language_name) VALUES 
@@ -88,7 +88,17 @@ INSERT INTO ladmark_categories (id, category_name) VALUES
 (7, 'Theater'),
 (8, 'Tourist attraction'),
 (9, 'Restaurant'),
-(10, 'Train station');
+(10, 'Train station'),
+(11, 'Shopping center'),
+(12, 'Pharmacy'),
+(13, 'Department store'),
+(14, '24 hours shop'),
+(15, 'Police station'),
+(16, 'School'),
+(17, 'Kindergarten'),
+(18, 'Public transport station'),
+(19, 'Fast food store'),
+(20, 'Hotel');
 
 -- Add 20 landmarks
 INSERT INTO landmarks (id, city_id, landmark_name) VALUES
@@ -234,14 +244,14 @@ INSERT INTO hosts (user_id, property_id) VALUES
 -- Add reservations
 INSERT INTO reservations (id, guest_id, property_id, reservation_status, from_date, to_date, is_paid) VALUES
 (1, 10, 1, 'COMPLETED', '2024-05-12', '2024-05-16', TRUE),
-(2, 3, 1, 'CREATED', '2025-04-15', '2025-06-14', FALSE),
+(2, 3, 1, 'CREATED', '2025-04-15', '2025-06-14', TRUE),
 (3, 4, 2, 'COMPLETED', '2024-12-01', '2024-12-10', TRUE),
-(4, 5, 5, 'CANCELLED', '2024-12-25', '2025-01-02', FALSE),
+(4, 5, 5, 'CANCELLED', '2024-12-25', '2025-01-02', TRUE),
 (5, 5, 4, 'COMPLETED', '2024-12-25', '2025-01-02', TRUE),
 (6, 4, 15, 'COMPLETED', '2024-05-18', '2024-05-22', TRUE),
 (7, 8, 8, 'COMPLETED', '2024-07-25', '2025-08-02', TRUE),
 (8, 6, 14, 'COMPLETED', '2024-05-12', '2024-05-16', TRUE),
-(9, 9, 20, 'CREATED', '2025-04-15', '2025-06-14', FALSE),
+(9, 9, 20, 'CREATED', '2025-04-15', '2025-06-14', TRUE),
 (10, 20, 12, 'COMPLETED', '2024-12-01', '2024-12-10', TRUE),
 (11, 4, 18, 'CANCELLED', '2024-12-25', '2025-01-02', FALSE),
 (12, 17, 19, 'COMPLETED', '2024-02-12', '2025-02-18', TRUE),
@@ -266,7 +276,17 @@ INSERT INTO payment_methods (id, method_name) VALUES
 (7, 'Cryptocurrency'),
 (8, 'Nequi'),
 (9, 'MercadoPago'),
-(10, 'Apple Pay');
+(10, 'Apple Pay'),
+(11, 'Rappy Pay'),
+(12, 'Paytm'),
+(13, 'Ipay88'),
+(14, 'Razorpay'),
+(15, 'Instamojo'),
+(16, 'ToyyibPay'),
+(17, 'Spektra'),
+(18, 'Payhere'),
+(19, 'Wirecard'),
+(20, 'SSLCOMMERZ');
 
 
 -- Add payments
