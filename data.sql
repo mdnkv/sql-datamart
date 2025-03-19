@@ -78,7 +78,7 @@ INSERT INTO languages (id, language_name) VALUES
 (20, 'Creole');
 
 -- Add landmark categories
-INSERT INTO ladmark_categories (id, category_name) VALUES
+INSERT INTO landmark_categories (id, category_name) VALUES
 (1, 'Museum'),
 (2, 'Airport'),
 (3, 'Bus station'),
@@ -123,7 +123,7 @@ INSERT INTO landmarks (id, city_id, landmark_name) VALUES
 (19, 16, 'Centro Cultural Gabriel Garcia Marquez'),
 (20, 16, 'El Dorado Airport');
 
--- Assign ladmarks to categories 
+-- Assign landmarks to categories 
 INSERT INTO landmarkcategories_landmarks (landmark_id, category_id) VALUES
 (1, 1),
 (2, 1),
